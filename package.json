@@ -1,0 +1,36 @@
+{
+  "name": "libp2p-pstn-topo-partialmesh",
+  "version": "0.0.1",
+  "description": "Partial mesh topology for connecting nodes in a js-libp2p-pstn (pubsub testnet) instance",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha -t 60000 test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavinmcdermott/js-libp2p-pstn-topo-partialmesh.git"
+  },
+  "keywords": [
+    "pubsub",
+    "testnet",
+    "pstn",
+    "libp2p",
+    "topology",
+    "libp2p-pstn",
+    "mesh"
+  ],
+  "author": "Gavin McDermott <gavinmcdermott@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gavinmcdermott/js-libp2p-pstn-topo-partialmesh/issues"
+  },
+  "homepage": "https://github.com/gavinmcdermott/js-libp2p-pstn-topo-partialmesh#readme",
+  "devDependencies": {
+    "chai": "3.5.0"
+  },
+  "dependencies": {
+    "chalk": "1.1.3",
+    "q": "1.4.1",
+    "ramda": "0.22.1"
+  }
+}
