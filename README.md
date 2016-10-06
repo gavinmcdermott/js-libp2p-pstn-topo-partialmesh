@@ -47,7 +47,7 @@ And the function returns a promise containing an array of now-connected nodes:
 ```javascript
 const create = require('libp2p-pstn-topo-partialmesh')
 const nodes = [nodeA, nodeB, ..., nodeN]
-create(nodes).then
+create(nodes).then((connected) => /* do something */)
 ```
 
 Note: Currently, peers make 2 connections to the mesh at random.
