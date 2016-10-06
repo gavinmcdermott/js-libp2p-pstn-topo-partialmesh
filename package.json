@@ -1,6 +1,6 @@
 {
   "name": "libp2p-pstn-topo-partialmesh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Partial mesh topology for connecting nodes in a js-libp2p-pstn (pubsub testnet) instance",
   "main": "src/index.js",
   "scripts": {
