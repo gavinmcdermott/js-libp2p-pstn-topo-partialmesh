@@ -17,17 +17,12 @@ const getPeersToFetch = (len, skipIdx, maxPeers) => {
   }, R.range(0, maxPeers))
 }
 
-module.exports = (opts, nodes) => {
-  const numPeerConns = 2
-
-  if (R.isNil(nodes)) {
-    nodes = opts
-  }
-
+module.exports = (nodes) => {
   if (!R.isArrayLike(nodes)) {
     throw new TopoError(`Expect nodes to be <array>`)
   }
   const size = nodes.length
+  const numPeerConns = 2
 
   const nestedPeerLinkFns = mapIndexed((fromNode, idx) => {
     const fromId = fromNode.peerInfo.id.toB58String()
