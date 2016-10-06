@@ -26,7 +26,11 @@
   },
   "homepage": "https://github.com/gavinmcdermott/js-libp2p-pstn-topo-partialmesh#readme",
   "devDependencies": {
-    "chai": "3.5.0"
+    "chai": "3.5.0",
+    "libp2p-ipfs": "0.14.1",
+    "multiaddr": "2.0.3",
+    "peer-id": "0.7.0",
+    "peer-info": "0.7.1"
   },
   "dependencies": {
     "chalk": "1.1.3",

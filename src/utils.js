@@ -21,6 +21,11 @@ const logProgress = (data) => {
   rl.write(`${prefix}: ${data}`)
 }
 
+const random = (min, max) => {
+  // min inclusive, max exclusive
+  return Math.floor(Math.random() * (max - min) + min)
+}
+
 const resolveList = (fns) => {
   const fn = R.head(fns.splice(0, 1))
   logProgress(`${fns.length} resolutions remaining...`)
@@ -32,4 +37,4 @@ const resolveList = (fns) => {
   return Q.delay(1).then(fn).then(() => resolveList(fns))
 }
 
-module.exports = { resolveList, log }
+module.exports = { resolveList, random, log }
